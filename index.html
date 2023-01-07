@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jueguito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <br>
+        <h1>Holi</h1>
+        <p>Para seleccionar la respuesta correcta, toca la casilla de la derecha.</p>
+        <br>
+    </header>
+    <div class="container">
+        <section id="p1">
+            <h3> 1.- ¿Qué día nos conocimos? </h3>
+            <label for="">
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Noviembre 29
+            </label>
+            <label for="">
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Noviembre 30
+            </label>
+            <label for="">
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Diciembre 1
+            </label>
+        </section>
+        <section id="p2">
+            <h3> 2.- Apodo correcto para José </h3>
+            <label for="">
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Josesito
+            </label>
+            <label for="">
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Pancho
+            </label>
+            <label for="">
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Pepito
+            </label>
+        </section>
+        <section id="p3">
+            <h3> 3.- Mejor miembro de twice </h3>
+            <label for="">
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Chaeyoung
+            </label>
+            <label for="">
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Mina
+            </label>
+            <label for="">
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Nayeon
+            </label>
+        </section>
+        <button onclick="listo()">Listo</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
